@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.Form__Inputs {
+  background: linear-gradient(to right, #412a6b, #2a0845);
+  box-shadow: -20px -20px 60px #000;
+  width: 30%;
+  height: 94vh;
+  padding: 30px;
+  position: fixed;
+  display: grid;
+  place-content: center;
+}
+
+.Form__Inputs h1 {
+  font-size: 50px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  display: grid;
+  place-content: center;
+  margin-top: -60px;
+}
+
+form h2 {
+  display: grid;
+  place-content: center;
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+form {
+  display: grid;
+  place-content: center;
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+form hr {
+  width: 430px;
+  margin-bottom: 10px;
+  place-content: center;
+}
+
+form input {
+  color: #fff;
+  font-size: 22px;
+  width: 400px;
+  height: 40px;
+  padding: 5px;
+  background: none;
+  border: solid 1px #fff;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+form label {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 10px;
+  margin: 5px 40px 5px 0;
+}
+form ul label {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 5px 40px 5px 10px;
+  font-weight: 900;
+}
+form button {
+  color: #fff;
+  width: 120px;
+  height: 60px;
+  margin: 20px auto;
+  border: solid 1px #fff;
+  padding: 4px;
+  border-radius: 40px;
+  background: transparent;
+  background-size: 100%;
+  font-size: 20px;
+}
+form button:hover {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: 0.8s;
+}
+
+form div {
+  margin-top: 30px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 2px;
+  opacity: 0.9;
+  filter: invert(0.9);
+}

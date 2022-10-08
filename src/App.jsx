@@ -56,23 +56,23 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Users Crud</h1>
-      <FormUsers 
-        createNewUser={createNewUser}
-        updateInfo={updateInfo}
-        updateUserById={updateUserById}
-        setUpdateInfo={setUpdateInfo}
-      />
-      {
-        users?.map(user =>(
-          <UserCard
-            key={user.id}
-            user={user} 
-            deleteUserById={deleteUserById}
-            setUpdateInfo={setUpdateInfo}
-          />
-        ))
-      }
+      <div className="Form__Inputs">
+        <h1>Users Crud</h1>
+        <FormUsers
+          createNewUser={createNewUser}
+          updateInfo={updateInfo}
+          updateUserById={updateUserById}
+          setUpdateInfo={setUpdateInfo}
+        />
+      </div>
+      {users?.map((user) => (
+        <UserCard
+          key={user.id}
+          user={user}
+          deleteUserById={deleteUserById}
+          setUpdateInfo={setUpdateInfo}
+        />
+      ))}
     </div>
   )
 }
